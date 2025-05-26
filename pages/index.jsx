@@ -13,7 +13,7 @@ const getPrice = (day) => {
 };
 
 const getPayPalLink = (price) => {
-  return `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=YOUR_PAYPAL_EMAIL&item_name=2500Fast+Blueprint&amount=${price}&currency_code=USD`;
+  return `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=spmack7@gmail.com&item_name=2500Fast+Blueprint&amount=${price}&currency_code=USD`;
 };
 
 export default function Home() {
@@ -22,25 +22,55 @@ export default function Home() {
   const link = getPayPalLink(price);
 
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center p-6 text-center">
-      <h1 className="text-4xl md:text-6xl font-bold mb-4">Make $2,500 in 7 Days</h1>
-      <p className="text-xl md:text-2xl max-w-xl mb-8">
-        The Real Blueprint that helped me survive when I had nothing. It starts at $49, drops $5 a day, and stops at $9. No matter what, it's yours.
-      </p>
-      <div className="bg-white text-black px-6 py-4 rounded-2xl shadow-xl mb-4">
-        <p className="text-lg font-bold">Day {day + 1} Price: ${price}</p>
+    <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center p-6 text-center space-y-8">
+      <div className="max-w-2xl">
+        <h1 className="text-4xl md:text-6xl font-bold mb-2">
+          They Rolled Their Eyes When I Said I’d Make $2,500 in 7 Days…
+        </h1>
+        <p className="text-xl md:text-2xl mb-6">
+          But that was Day 1. Now I’m documenting every step — and letting you copy it.
+        </p>
+
+        <div className="bg-white text-black px-6 py-4 rounded-2xl shadow-xl mb-4">
+          <p className="text-lg font-bold">Day {day + 1} Price: ${price}</p>
+        </div>
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-yellow-400 hover:bg-yellow-300 text-black px-6 py-3 rounded-full text-lg font-semibold transition"
+        >
+          Buy Now for ${price}
+        </a>
+
+        <p className="mt-4 text-gray-400">Price drops $5 each day until Day 7.</p>
+
+        <div className="text-left mt-12 space-y-6">
+          <h2 className="text-2xl font-bold">What You’ll Get:</h2>
+          <ul className="list-disc list-inside space-y-2 text-lg text-gray-200">
+            <li>The real $2,500-in-7-days blueprint I’m using right now</li>
+            <li>Step-by-step breakdown of each move I make</li>
+            <li>Daily updates by email</li>
+            <li>PDF downloads to follow along</li>
+            <li>Zero fluff. Zero fake screenshots. 100% reality.</li>
+          </ul>
+
+          <h2 className="text-2xl font-bold mt-10">What People Are Saying:</h2>
+          <blockquote className="italic text-gray-400 border-l-4 border-yellow-500 pl-4">
+            “Finally, something that’s real. No guru vibes — just truth.”
+          </blockquote>
+          <blockquote className="italic text-gray-400 border-l-4 border-yellow-500 pl-4">
+            “This helped me believe I could start something without money.”
+          </blockquote>
+
+          <h2 className="text-2xl font-bold mt-10">FAQ</h2>
+          <ul className="list-disc list-inside space-y-2 text-lg text-gray-200">
+            <li><strong>Do I need money to start?</strong> — No. I started with nothing.</li>
+            <li><strong>Is this a course?</strong> — Nope. It’s a real journey, shared as it happens.</li>
+            <li><strong>What happens after Day 7?</strong> — You’ll know exactly what worked. And you can copy it all.</li>
+          </ul>
+        </div>
       </div>
-      <a
-        href={link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-yellow-400 hover:bg-yellow-300 text-black px-6 py-3 rounded-full text-lg font-semibold transition"
-      >
-        Buy Now for ${price}
-      </a>
-      <p className="mt-6 text-sm text-gray-400">
-        This price updates every 24 hours. Come back tomorrow if you're not ready today.
-      </p>
     </div>
   );
 }
