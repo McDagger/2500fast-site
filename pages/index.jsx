@@ -32,7 +32,7 @@ export default function Home() {
           This is a real-time challenge. I’m documenting every step — and giving you the blueprint to follow.
         </p>
 
-        <div className="bg-yellow-400 hover:bg-yellow-300 text-black px-6 py-3 rounded-full text-lg font-semibold transition mb-4">
+        <div className="bg-white text-black px-6 py-3 rounded-full text-lg font-semibold shadow-md mb-4">
           <p className="text-lg font-bold">Day {day + 1} Price: ${price}</p>
         </div>
         <a
