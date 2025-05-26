@@ -57,7 +57,7 @@ export default function Home() {
 
           <div className="mt-10 bg-gray-800 p-6 rounded-xl shadow-lg text-left">
             <h2 className="text-2xl font-bold mb-2">Want the Blueprint but Can't Pay?</h2>
-            <p className="text-gray-300 mb-4">Enter your email and I’ll send you the 7-Day Blueprint anyway. No pressure, no spam.</p>
+            <p className="text-gray-300 mb-4">Enter your email and I’ll send you Day 1 of the 7-Day Blueprint anyway. No pressure, no spam.</p>
             <form action="https://formspree.io/f/your-form-id" method="POST" className="flex flex-col sm:flex-row gap-3">
               <input
                 type="email"
