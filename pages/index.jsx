@@ -22,7 +22,9 @@ export default function Home() {
   const link = getPayPalLink(price);
 
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center p-6 text-center space-y-8">
+    <div className="min-h-screen bg-black text-white flex items-center justify-center p-6 text-center">
+  <div className="w-full max-w-3xl mx-auto space-y-12 flex flex-col items-center">
+
       <div className="w-full max-w-3xl mx-auto">
         <h1 className="text-4xl md:text-6xl font-bold mb-2">
           They laughed at me, but I made $2,500 in 7 days
