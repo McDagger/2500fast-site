@@ -21,11 +21,9 @@ export default function Home() {
   const price = getPrice(day);
   const link = getPayPalLink(price);
 
-return (
-  <div className="min-h-screen bg-black text-white flex items-center justify-center p-6 text-center">
-    <div className="w-full max-w-3xl mx-auto space-y-12 flex flex-col items-center">
-
-
+  return (
+    <div className="min-h-screen bg-black text-white flex items-center justify-center p-6 text-center">
+  <div className="w-full max-w-3xl mx-auto space-y-12 flex flex-col items-center">
       <div className="w-full max-w-3xl mx-auto">
         <h1 className="text-4xl md:text-6xl font-bold mb-2">
           They laughed at me, but I made $2,500 in 7 days
@@ -48,9 +46,9 @@ return (
 
         <p className="mt-4 text-gray-400">Price drops $5 each day until Day 7.</p>
 
-        <div className="text-left mt-12 space-y-6">
+        <div className="text-center mt-12 space-y-6">
           <h2 className="text-2xl font-bold">What You’ll Get:</h2>
-          <ul className="list-disc list-inside space-y-2 text-lg text-gray-200">
+          <ul className="list-disc list-inside space-y-2 text-lg text-gray-200 text-center">
             <li>The real $2,500-in-7-days blueprint I’m using right now</li>
             <li>Step-by-step breakdown of each move I make</li>
             <li>Daily updates by email</li>
@@ -59,8 +57,8 @@ return (
           </ul>
 
           <div className="mt-10 bg-gray-800 p-6 rounded-xl shadow-lg text-left">
-            <h2 className="text-2xl font-bold mb-2">Want the Blueprint but Can't Pay?</h2>
-            <p className="text-gray-300 mb-4">Enter your email and I’ll send you Day 1 of the 7-Day Blueprint anyway. No pressure, no spam.</p>
+            <h2 className="text-2xl font-bold mb-2 text-center">Want the Blueprint but Can't Pay?</h2>
+            <p className="text-gray-300 mb-4 text-center">Enter your email and I’ll send you Day 1 of the 7-Day Blueprint anyway. No pressure, no spam.</p>
             <form action="https://formspree.io/f/your-form-id" method="POST" className="flex flex-col sm:flex-row gap-3">
               <input
                 type="email"
@@ -79,15 +77,15 @@ return (
           </div>
 
           <h2 className="text-2xl font-bold mt-10">What People Are Saying:</h2>
-          <blockquote className="italic text-gray-400 border-l-4 border-yellow-500 pl-4">
+          <blockquote className="italic text-gray-400 border-l-4 border-yellow-500 pl-4 text-center border-none">
             “Finally, something that’s real. No guru vibes — just truth.”
           </blockquote>
-          <blockquote className="italic text-gray-400 border-l-4 border-yellow-500 pl-4">
+          <blockquote className="italic text-gray-400 border-l-4 border-yellow-500 pl-4 text-center border-none">
             “This helped me believe I could start something without money.”
           </blockquote>
 
           <h2 className="text-2xl font-bold mt-10">FAQ</h2>
-          <ul className="list-disc list-inside space-y-2 text-lg text-gray-200">
+          <ul className="list-disc list-inside space-y-2 text-lg text-gray-200 text-center">
             <li><strong>Do I need money to start?</strong> — No. I started with nothing.</li>
             <li><strong>Is this a course?</strong> — Nope. It’s a real journey, shared as it happens.</li>
             <li><strong>What happens after Day 7?</strong> — You’ll know exactly what worked. And you can copy it all.</li>
