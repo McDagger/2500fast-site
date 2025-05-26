@@ -26,7 +26,7 @@ export default function Home() {
   <div className="w-full max-w-3xl mx-auto">
       <div className="max-w-2xl">
         <h1 className="text-4xl md:text-6xl font-bold mb-2">
-          They Rolled Their Eyes When I Said I’d Make $2,500 in 7 Days…
+          They laughed at me, but I made $2,500 in 7 days
         </h1>
         <p className="text-xl md:text-2xl mb-6">
           But that was Day 1. Now I’m documenting every step — and letting you copy it.
